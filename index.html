@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="site.css">
+<body>
+    <script  >
+       
+        var i=0;
+        function c(){ 
+            var t=['images2.png','images.png'];
+            document.images[0].src=t[i];
+            if(i==0){i=1;}
+            else{i=0;}
+
+        }
+        setInterval(c,500);
+        function t(){
+        var color=['#6B5B95','#F7CAC9','#F75990','#3E50B4','#FF3F80'];
+        var r=Math.random();
+        document.getElementById('class').style.backgroundColor=color[Math.floor(5*r)];
+
+    }setInterval(t,500);
+    function b(){
+        var color=['#6B5B95','#F7CAC9','#F75990','#3E50B4','#FF3F80'];
+        var r=Math.random();
+        document.getElementById('class1').style.backgroundColor=color[Math.floor(5*r)];
+
+    }setInterval(b,500);
+
+    function l(){
+        var color=['#6B5B95','#F7CAC9','#F75990','#3E50B4','#FF3F80'];
+        var r=Math.random();
+        document.getElementById('big').style.color=color[Math.floor(5*r)];
+
+    }setInterval(l,500);
+        </script>
+
+    <section class="top-page">  
+        <header class="header"> 
+            
+    <nav class="nav">
+        <h1 class="CLASS1" id="class"><a href="index.html">Accueil</a></h1> <img id=" img" src="images.png">
+        <h1 class="CLASS2" id="class1"><a href="resume.html"> résumés</a></h1>
+        
+    </nav>
+
+   
+</header> 
+
+<div>
+<h1 class="big-title" id="big"> Explorez Nos livres pour Enfants Pleins d'Aventures</h1>
+<a href="#"> scroll</a>
+</div>
+
+</section>
+<div class="copyright"><h1>copyright by nohaila moallaqat</h1></div>
+<section class="irem">
+    <div class="irem1">
+        <img src="images/charlie et la chocolaterie.jpg">
+        <button class="item"><a href="resume.html" >charlie et la chocolaterie</a></button>
+    </div>
+    
+       <div class="irem2"> <img src="images/le petit prince.jpeg">
+        <button  href="resume.html" class ="item"> <a href="resume.html">Le petit prince</a></button></div>
+      <div class="irem3">  <img src="images/harry potter.jpeg"><button href="resume.html" class ="item"><a ref="resume.html">Harry potter</a></button>
+    </div>
+    
+        
+    
+</section>
+
+       
+</body>
+</html>
